@@ -27,7 +27,9 @@ public abstract class Employee implements Payable{
 
     public double getPayRate() { return this.payRate; }
 
-    public void displayAddress() { Address.getAddress(); }
+    public void displayAddress() {
+        System.out.println(address.toString());
+    }
 
     public void setAddress(Address address) {
         this.address = address;
